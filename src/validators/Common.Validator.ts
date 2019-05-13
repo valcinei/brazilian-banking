@@ -20,8 +20,8 @@ export class BankInfo{
 
 export class CommonValidator{
     protected agencyNumberLength = 4;
-    protected accountNumberLengh = 8;
-    protected accountDigitLengh = 1;
+    protected accountNumberLenght = 8;
+    protected accountDigitLenght = 1;
 
     public  validate(bankInfo: BankInfo): boolean {
         let validAgency = this.valdateAgency(bankInfo.agencyNumber, bankInfo.agencyDigit);
@@ -46,11 +46,11 @@ export class CommonValidator{
     }
 
     public isValidAgencyDigit(digitNumber: string): boolean {
-        return /^[a-zA-Z0-9]{0,1}$/.test(digitNumber) && digitNumber.length === this.accountDigitLengh;
+        return /^[a-zA-Z0-9]{0,1}$/.test(digitNumber) && digitNumber.length === this.accountDigitLenght;
     }
 
     public isValidAccountNumber(accountNumber: string): boolean {
-         return (/^[0-9]{1,12}$/.test(accountNumber) && parseInt(accountNumber) > 0) && accountNumber.length == this.accountNumberLengh;
+         return (/^[0-9]{1,12}$/.test(accountNumber) && parseInt(accountNumber) > 0) && accountNumber.length == this.accountNumberLenght;
     }
     public  isValidAccountDigit(accountDigit: string): boolean {
         return /^[a-zA-Z0-9]{1}$/.test(accountDigit);

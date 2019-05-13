@@ -15,7 +15,7 @@ describe("Validate Banco do Brasil",()=>{
 
     it("Validate Agency", ()=>{
         let bancoDoBrasilValidator = new BancoDoBrasilValidator()
-        expect(bancoDoBrasilValidator.valdateAgency('6513','7')).toBeTruthy()
+        expect(bancoDoBrasilValidator.valdateAgency('6513')).toBeTruthy()
     })
     it("Validate Account and Agency",()=>{
         let bancoDoBrasilValidator = new BancoDoBrasilValidator()

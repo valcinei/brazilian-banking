@@ -2,21 +2,21 @@
 import { CommonValidator, CommonValidatorI, BankInfo } from './Common.validator';
 
 export class BancoDoBrasilValidator extends CommonValidator implements CommonValidatorI {
-    protected accountNumberLengh = 8;
-    protected accountDigitLengh = 1;
+    protected accountNumberLenght = 8;
+    protected accountDigitLenght = 1;
 
     constructor() {
         super()
     }
 
     public validateAccount(accountNumber: string, accountDigit: string): boolean {
-        accountNumber = this.addLeftZero(accountNumber, 8)
+        accountNumber = this.addLeftZero(accountNumber, this.accountNumberLenght)
         let calculatedDigit = this.getCalculatedSequency(accountNumber, 9);
         return accountDigit.toUpperCase() === calculatedDigit;
     }
 
-    public valdateAgency(agencyNumber: string, agencyDigit: string): boolean {
-        agencyNumber = this.addLeftZero(agencyNumber, 4)
+    public valdateAgency(agencyNumber: string, agencyDigit: string = ''): boolean {
+        agencyNumber = this.addLeftZero(agencyNumber, this.agencyNumberLength)
         let calculatedDigit = this.getCalculatedSequency(agencyNumber, 5);
         let validAgencyDigit:boolean = false;
 
