@@ -25,12 +25,12 @@ export class CommonValidator{
 
     public  validate(bankInfo: BankInfo): boolean {
         let validAgency = this.valdateAgency(bankInfo.agencyNumber, bankInfo.agencyDigit);
-        let validAccount = this.validateAccount(bankInfo.accountNumber, bankInfo.accountDigit);
+        let validAccount = this.validateAccount(bankInfo.accountNumber, bankInfo.accountDigit, bankInfo.agencyNumber);
         return validAgency && validAccount
 
     }
     
-    public validateAccount(accountNumber: string, accountDigit: string): boolean {
+    public validateAccount(accountNumber: string, accountDigit: string, agencyNumber?:string): boolean {
         return this.isValidAccountNumber(accountNumber) && this.isValidAccountDigit(accountDigit);
     }
 

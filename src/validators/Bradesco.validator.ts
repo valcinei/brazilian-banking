@@ -1,5 +1,5 @@
 
-import { CommonValidator, CommonValidatorI, BankInfo } from './Common.validator';
+import { CommonValidator, CommonValidatorI } from './Common.validator';
 
 export class BradescoValidator extends CommonValidator implements CommonValidatorI {
     protected accountNumberLenght = 7;
