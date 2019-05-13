@@ -5,15 +5,15 @@ export interface CommonValidatorI{
 
 export class BankInfo{
     constructor(
-       public agencyNumber:string,
-       public agencyDigit:string,
-       public accountNumber:string,
-       public accountDigit:string,
+        public accountNumber:string,
+        public accountDigit:string,
+        public agencyNumber:string,
+        public agencyDigit = '',
     ){
-        this.agencyNumber = agencyNumber
-        this.agencyDigit = agencyDigit
         this.accountNumber = accountNumber
         this.accountDigit = accountDigit
+        this.agencyNumber = agencyNumber
+        this.agencyDigit = agencyDigit
     }
 }
 
