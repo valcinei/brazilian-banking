@@ -1,3 +1,3 @@
-import { BancoDoBrasilValidator } from './validators/BancoDoBrasil.Validator';
+import { BancoDoBrasilValidator } from './validators/BancoDoBrasil.validator';
 
-export {BancoDoBrasilValidator}
+export { BancoDoBrasilValidator }

@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "test": "tsc && jasmine",
+    "test": "tsc && jasmine --config=src/spec/support/jasmine.json",
     "test:watch": "nodemon --exec 'tsc & jasmine --config=src/spec/support/jasmine.json' ",
     "build": "tsc"
   },
