@@ -1,7 +1,7 @@
 
 import { CommonValidator, CommonValidatorI, BankInfo } from './Common.validator';
 
-export class BancoDoBrasilValidator extends CommonValidator implements CommonValidatorI {
+export class BradescoValidator extends CommonValidator implements CommonValidatorI {
     protected accountNumberLengh = 8;
     protected accountDigitLengh = 1;
 
@@ -9,6 +9,8 @@ export class BancoDoBrasilValidator extends CommonValidator implements CommonVal
         super()
     }
 
+
+    
     public validateAccount(accountNumber: string, accountDigit: string): boolean {
         accountNumber = this.addLeftZero(accountNumber, 8)
         let calculatedDigit = this.getCalculatedSequency(accountNumber, 9);

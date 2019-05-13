@@ -1,6 +1,7 @@
 
 export interface CommonValidatorI{
-    validate(bankInfo:BankInfo):boolean;
+    validateAccount(accountNumber: string, accountDigit: string): boolean;
+    valdateAgency(accountNumber: string, accountDigit: string): boolean;
 }
 
 export class BankInfo{
@@ -21,7 +22,25 @@ export class CommonValidator{
     protected agencyNumberLength = 4;
     protected accountNumberLengh = 8;
     protected accountDigitLengh = 1;
-       
+
+    public  validate(bankInfo: BankInfo): boolean {
+        let validAgency = this.valdateAgency(bankInfo.agencyNumber, bankInfo.agencyDigit);
+        let validAccount = this.validateAccount(bankInfo.accountNumber, bankInfo.accountDigit);
+        return validAgency && validAccount
+
+    }
+    
+    public validateAccount(accountNumber: string, accountDigit: string): boolean {
+        return this.isValidAccountNumber(accountNumber) && this.isValidAccountDigit(accountDigit);
+    }
+
+    public valdateAgency(agencyNumber: string, agencyDigit: string): boolean {
+        if(agencyDigit){
+            return this.isValidAgencyNumber(agencyNumber) && this.isValidAgencyDigit(agencyDigit)
+        }
+        return this.isValidAgencyNumber(agencyNumber) 
+    }
+    
     public isValidAgencyNumber(agencyNumber: string):boolean{
         return /^(?!0000)([0-9]{4})$/.test(agencyNumber);
     }
