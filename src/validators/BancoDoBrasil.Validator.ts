@@ -24,6 +24,7 @@ export class BancoDoBrasilValidator extends CommonValidator implements CommonVal
     }
 
     public valdateAgency(agencyNumber: string, agencyDigit: string): boolean {
+
         agencyNumber = this.addLeftZero(agencyNumber,4)
         let splitedNumbers = agencyNumber.split("");
         let calculatedDigit = this.getCalculatedSequency(splitedNumbers, 5);
@@ -34,8 +35,7 @@ export class BancoDoBrasilValidator extends CommonValidator implements CommonVal
             let valid = this.isValidAgencyNumber(agencyNumber)  && validAgencyDigit;
             return (agencyDigit.toUpperCase() === calculatedDigit) && valid;
         }else{
-            validAgencyDigit = true
-            return validAgencyDigit
+            return this.isValidAgencyNumber(agencyNumber)
         }
         
 
