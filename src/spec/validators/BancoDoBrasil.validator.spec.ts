@@ -19,7 +19,7 @@ describe("Validate Banco do Brasil",()=>{
     })
     it("Validate Account and Agency",()=>{
         let bancoDoBrasilValidator = new BancoDoBrasilValidator()
-        let bankInfo = new BankInfo('1432','','97870','1')
+        let bankInfo = new BankInfo('97870','1','3030','9')
         expect(bancoDoBrasilValidator.validate(bankInfo)).toBeTruthy()
     })
 })
