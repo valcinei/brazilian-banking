@@ -8,6 +8,11 @@ describe("Validate Banco do Brasil",()=>{
         expect(bancoDoBrasilValidator.validateAccount('1173080','3')).toBeTruthy()
     })
 
+    it("Validate Seconde Account", ()=>{
+        let bancoDoBrasilValidator = new BancoDoBrasilValidator()
+        expect(bancoDoBrasilValidator.validateAccount('1217916','7')).toBeTruthy()
+    })
+
     it("Validate Agency", ()=>{
         let bancoDoBrasilValidator = new BancoDoBrasilValidator()
         expect(bancoDoBrasilValidator.valdateAgency('6513','7')).toBeTruthy()
