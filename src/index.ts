@@ -1,6 +1,14 @@
 import { BancoDoBrasilValidator } from './validators/BancoDoBrasil.validator';
-import { BankInfo } from './validators/Common.validator';
+import { BradescoValidator } from './validators/Bradesco.validator';
+import { ItauValidator } from './validators/Itau.validator';
+import { SantanderValidator } from './validators/Satander.validator';
+import { BankInfo, CommonValidator } from './validators/Common.validator';
 
 
 
-export { BancoDoBrasilValidator, BankInfo }
+export { 
+    BancoDoBrasilValidator,
+    BradescoValidator,
+    ItauValidator,
+    SantanderValidator,
+    BankInfo }
