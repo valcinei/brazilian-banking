@@ -34,7 +34,7 @@ export class CommonValidator{
         return this.isValidAccountNumber(accountNumber) && this.isValidAccountDigit(accountDigit);
     }
 
-    public valdateAgency(agencyNumber: string, agencyDigit: string): boolean {
+    public valdateAgency(agencyNumber: string, agencyDigit: string =''): boolean {
         if(agencyDigit){
             return this.isValidAgencyNumber(agencyNumber) && this.isValidAgencyDigit(agencyDigit)
         }

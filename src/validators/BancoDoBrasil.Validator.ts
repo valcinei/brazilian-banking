@@ -28,7 +28,6 @@ export class BancoDoBrasilValidator extends CommonValidator implements CommonVal
             return this.isValidAgencyNumber(agencyNumber)
         }
         
-
     }
 
     private getCalculatedSequency(sequencyNumber: string, subtractValue: number) {
