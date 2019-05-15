@@ -7,7 +7,7 @@
   "scripts": {
     "test": "tsc && jasmine --config=src/spec/support/jasmine.json",
     "test:watch": "nodemon --exec 'tsc & jasmine --config=src/spec/support/jasmine.json' ",
-    "build": "webpack"
+    "build": "webpack && tsc"
   },
   "keywords": [],
   "author": "",

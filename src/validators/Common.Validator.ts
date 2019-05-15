@@ -58,6 +58,12 @@ export class CommonValidator{
 
     addLeftZero(item: string, length: number){
         let newItem = "";
+        if(!item){
+            for(let i = 0 ; i < length; i++){
+                newItem += '0'
+            }
+            return newItem;
+        }
         for(let i = item.length ; i < length; i++){
             newItem += '0'
         }
