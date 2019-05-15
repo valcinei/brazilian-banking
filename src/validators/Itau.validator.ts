@@ -1,7 +1,7 @@
 
 import { CommonValidator, CommonValidatorI } from './Common.validator';
 
-export class ItauValidator extends CommonValidator implements CommonValidatorI {
+export class Itau extends CommonValidator implements CommonValidatorI {
     protected accountNumberLenght = 5;
     protected accountDigitLenght = 1;
 

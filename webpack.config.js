@@ -17,7 +17,7 @@ module.exports = {
   },
   output: {
     libraryTarget: 'window',
-    library: 'brazilianBankingValidator',
+    library: 'XBankAccount',
     libraryExport: 'default',
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')

@@ -30,8 +30,8 @@ describe("Common Validator Account", ()=>{
     })
 
     it("Add Zero Left", ()=>{
-        let bancoDoBrasilValidator = new CommonValidator()
-        expect(bancoDoBrasilValidator.addLeftZero('6513', 8)).toEqual("00006513")
+        let BancoDoBrasil = new CommonValidator()
+        expect(BancoDoBrasil.addLeftZero('6513', 8)).toEqual("00006513")
     })
 
 })

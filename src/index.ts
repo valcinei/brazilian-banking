@@ -1,27 +1,27 @@
-import { BancoDoBrasilValidator } from './validators/BancoDoBrasil.validator';
-import { BradescoValidator } from './validators/Bradesco.validator';
-import { ItauValidator } from './validators/Itau.validator';
-import { SantanderValidator } from './validators/Satander.validator';
-import { CityBankValidator } from './validators/CityBank.validator';
+import { BancoDoBrasil } from './validators/BancoDoBrasil.validator';
+import { Bradesco } from './validators/Bradesco.validator';
+import { Itau } from './validators/Itau.validator';
+import { Santander } from './validators/Satander.validator';
+import { CityBank } from './validators/CityBank.validator';
 import { BankInfo, CommonValidator } from './validators/Common.validator';
 
 
-const brazilianBankingValidator = {
-    BancoDoBrasilValidator,
-    BradescoValidator,
-    ItauValidator,
-    SantanderValidator,
-    CityBankValidator,
+const XBankAccount = {
+    BancoDoBrasil,
+    Bradesco,
+    Itau,
+    Santander,
+    CityBank,
     CommonValidator,
     BankInfo }
 
-export default brazilianBankingValidator 
+export default XBankAccount 
 
 export { 
-    BancoDoBrasilValidator,
-    BradescoValidator,
-    ItauValidator,
-    SantanderValidator,
-    CityBankValidator,
+    BancoDoBrasil,
+    Bradesco,
+    Itau,
+    Santander,
+    CityBank,
     CommonValidator,
     BankInfo }

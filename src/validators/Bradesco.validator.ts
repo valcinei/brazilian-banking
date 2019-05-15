@@ -1,7 +1,7 @@
 
 import { CommonValidator, CommonValidatorI } from './Common.validator';
 
-export class BradescoValidator extends CommonValidator implements CommonValidatorI {
+export class Bradesco extends CommonValidator implements CommonValidatorI {
     protected accountNumberLenght = 7;
     protected accountDigitLenght = 1;
 

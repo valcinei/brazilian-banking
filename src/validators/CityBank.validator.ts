@@ -1,7 +1,7 @@
 
 import { CommonValidator, CommonValidatorI } from './Common.validator';
 
-export class CityBankValidator extends CommonValidator implements CommonValidatorI {
+export class CityBank extends CommonValidator implements CommonValidatorI {
     protected accountNumberLenght = 10;
     protected accountDigitLenght = 1;
 
