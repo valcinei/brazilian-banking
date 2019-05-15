@@ -6,7 +6,7 @@ import { CityBankValidator } from './validators/CityBank.validator';
 import { BankInfo, CommonValidator } from './validators/Common.validator';
 
 
-const brazilianBankValidator = {
+const brazilianBankingValidator = {
     BancoDoBrasilValidator,
     BradescoValidator,
     ItauValidator,
@@ -14,8 +14,8 @@ const brazilianBankValidator = {
     CityBankValidator,
     CommonValidator,
     BankInfo }
-    
-export default brazilianBankValidator 
+
+export default brazilianBankingValidator 
 
 export { 
     BancoDoBrasilValidator,
