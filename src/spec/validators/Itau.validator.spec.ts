@@ -1,4 +1,4 @@
-import { BankInfo } from "../../validators/Common.validator";
+import { BankingInfo } from "../../validators/Common.validator";
 import { Itau } from "../../validators/Itau.validator";
 
 
@@ -20,7 +20,7 @@ describe("Validate Santander",()=>{
     })
     it("Validate Account and Agency",()=>{
         let itau = new Itau()
-        let bankInfo = new BankInfo('20141','6','8245')
+        let bankInfo = new BankingInfo('20141','6','8245')
         expect(itau.validate(bankInfo)).toBeTruthy()
     })
 })

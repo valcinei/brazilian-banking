@@ -1,4 +1,4 @@
-import { BankInfo } from "../../validators/Common.validator";
+import { BankingInfo } from "../../validators/Common.validator";
 import { Santander } from "../../validators/Satander.validator";
 
 
@@ -19,7 +19,7 @@ describe("Validate Santander",()=>{
     })
     it("Validate Account and Agency",()=>{
         let santander = new Santander()
-        let bankInfo = new BankInfo('45162447','2','2130')
+        let bankInfo = new BankingInfo('45162447','2','2130')
         expect(santander.validate(bankInfo)).toBeTruthy()
     })
 })

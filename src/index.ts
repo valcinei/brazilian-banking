@@ -3,7 +3,7 @@ import { Bradesco } from './validators/Bradesco.validator';
 import { Itau } from './validators/Itau.validator';
 import { Santander } from './validators/Satander.validator';
 import { CityBank } from './validators/CityBank.validator';
-import { BankInfo, CommonValidator } from './validators/Common.validator';
+import { BankingInfo, CommonValidator } from './validators/Common.validator';
 
 
 const XBankAccount = {
@@ -13,7 +13,7 @@ const XBankAccount = {
     Santander,
     CityBank,
     CommonValidator,
-    BankInfo }
+    BankingInfo }
 
 export default XBankAccount 
 
@@ -24,4 +24,4 @@ export {
     Santander,
     CityBank,
     CommonValidator,
-    BankInfo }
+    BankingInfo }

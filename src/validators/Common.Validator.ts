@@ -4,7 +4,7 @@ export interface CommonValidatorI{
     valdateAgency(accountNumber: string, accountDigit: string): boolean;
 }
 
-export class BankInfo{
+export class BankingInfo{
     constructor(
         public accountNumber:string,
         public accountDigit:string,
@@ -23,7 +23,7 @@ export class CommonValidator{
     protected accountNumberLenght = 8;
     protected accountDigitLenght = 1;
 
-    public  validate(bankInfo: BankInfo): boolean {
+    public  validate(bankInfo: BankingInfo): boolean {
         let validAgency = this.valdateAgency(bankInfo.agencyNumber, bankInfo.agencyDigit);
         let validAccount = this.validateAccount(bankInfo.accountNumber, bankInfo.accountDigit, bankInfo.agencyNumber);
         return validAgency && validAccount
