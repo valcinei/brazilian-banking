@@ -9,8 +9,6 @@ export class BradescoValidator extends CommonValidator implements CommonValidato
         super()
     }
 
-
-
     public validateAccount(accountNumber: string, accountDigit: string): boolean {
         accountNumber = this.addLeftZero(accountNumber, this.accountNumberLenght)
         let calculatedDigit = this.getSequencyAccount(accountNumber);
@@ -32,8 +30,7 @@ export class BradescoValidator extends CommonValidator implements CommonValidato
             return (agencyDigit.toUpperCase() === calculatedDigit || calculatedDigit == 'P') && valid;
         }else{
             return this.isValidAgencyNumber(agencyNumber)
-        }
-        
+        } 
 
     }
 
@@ -84,7 +81,6 @@ export class BradescoValidator extends CommonValidator implements CommonValidato
           }
         }
     }
-
 
     private multiplyAccordingWeight(number: number, index: number) {
         var weight = [2,7,6,5,4,3,2];

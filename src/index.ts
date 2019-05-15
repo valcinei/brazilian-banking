@@ -7,7 +7,6 @@ import { BankInfo, CommonValidator } from './validators/Common.validator';
 
 
 
-
 export { 
     BancoDoBrasilValidator,
     BradescoValidator,
