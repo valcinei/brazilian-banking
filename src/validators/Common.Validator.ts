@@ -50,7 +50,7 @@ export class CommonValidator{
     }
 
     public isValidAccountNumber(accountNumber: string): boolean {
-         return (/^[0-9]{1,12}$/.test(accountNumber) && parseInt(accountNumber) > 0) && accountNumber.length == this.accountNumberLenght;
+         return (/^[0-9]{1,12}$/.test(accountNumber) && parseInt(accountNumber) > 0) && (accountNumber.length == this.accountNumberLenght);
     }
     public  isValidAccountDigit(accountDigit: string): boolean {
         return /^[a-zA-Z0-9]{1}$/.test(accountDigit);
