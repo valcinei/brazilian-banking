@@ -1,7 +1,11 @@
 {
-  "name": "brazilian-banking-validator",
+  "name": "brazilian-banking",
   "version": "1.0.0",
   "description": "",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/valcinei/brazilian-banking.git"
+  },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
